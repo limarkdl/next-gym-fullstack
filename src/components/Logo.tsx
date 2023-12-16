@@ -35,7 +35,6 @@ export default function Logo() {
     );
   }
 
-  // Fallback to light logo if theme is not resolved
   return (
     <Image src={LOGOSVG_LIGHT} alt='Swole Pigeon Logo' width={50} height={50} />
   );

@@ -32,3 +32,8 @@ export function convertCmToFeetInches (cm: number) {
   const inches = Math.round(totalInches % 12);
   return [feet, inches];
 };
+
+
+export function calculateBMI (height: number, weight: number) {
+  return (weight / ((height / 100) ** 2)).toFixed(2);
+};
