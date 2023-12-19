@@ -1,7 +1,7 @@
 'use client';
 
 import AboutBMI from './ui/about-bmi';
-import BMICalculator from './ui/bmi-calculator';
+import BMICalculator from './ui/BMICalculator';
 
 const Page = () => {
   return (

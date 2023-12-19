@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/providers/theme-provider';
+import {ClerkProvider} from "@clerk/nextjs";
 const inter = Inter({ subsets: ['latin'] });
 
 
@@ -22,7 +23,9 @@ export default function RootLayout({
 
   return (
       <html lang='en'>
-        <body className={inter.className + 'overflow-x-hidden'}>
+      <ClerkProvider afterSignInUrl='/app' afterSignUpUrl='/app'>
+
+      <body className={inter.className + 'overflow-x-hidden'}>
           <ThemeProvider
             attribute='class'
             defaultTheme='system'
@@ -31,6 +34,7 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
         </body>
+          </ ClerkProvider>
       </html>
   );
 }

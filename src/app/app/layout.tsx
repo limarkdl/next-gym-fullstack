@@ -2,7 +2,7 @@ import Logo from '@/components/Logo';
 import { Navbar } from '@/components/Navbar';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
 import { Popover, PopoverTrigger } from '@/components/ui/popover';
-import { ClerkProvider, UserButton } from '@clerk/nextjs';
+import {  UserButton } from '@clerk/nextjs';
 import { currentUser } from '@clerk/nextjs';
 import { PopoverContent } from '@/components/ui/popover';
 import Link from 'next/link';
@@ -12,9 +12,7 @@ async function Layout({ children }: { children: React.ReactNode }) {
   const user = await currentUser();
 
   return (
-    <ClerkProvider afterSignInUrl='/dashboard' afterSignUpUrl='/dashboard'>
-      {user ? (
-        <>
+      <>
           <div className='flex h-[60px] bg-background items-center gap-3 justify-between px-3 py-1'>
             <div className='flex gap-2 font-extralight font-Unbounded items-center text-2xl'>
               <Link className='flex gap-2 items-center' href={'/app'}>
@@ -40,13 +38,8 @@ async function Layout({ children }: { children: React.ReactNode }) {
               </Popover>
             </div>
           </div>
-
           <div className='max-w-screen-2xl mx-auto'>{children}</div>
-        </>
-      ) : (
-        <>{children}</>
-      )}
-    </ClerkProvider>
+  </>
   );
 }
 
