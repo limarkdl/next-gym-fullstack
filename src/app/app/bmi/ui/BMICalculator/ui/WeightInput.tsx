@@ -2,7 +2,15 @@ import { Input} from '@/components/ui/input';
 import { Slider } from '@/components/ui/slider';
 import { Label} from '@/components/ui/label';
 
-const WeightInput = ({ unit, sliderWeight, weightPounds, handleWeightSliderChange, handleWeightInputChange }) => {
+type WeightInputProps = {
+    unit: string;
+    sliderWeight: number[];
+    weightPounds: number;
+    handleWeightSliderChange: (value: number[]) => void;
+    handleWeightInputChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+const WeightInput = ({ unit, sliderWeight, weightPounds, handleWeightSliderChange, handleWeightInputChange }: WeightInputProps) => {
     return (
         <div className='flex flex-col flex-auto space-y-1.5'>
             {unit === 'imperial' ? (

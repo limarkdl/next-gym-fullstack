@@ -2,7 +2,12 @@ import React from 'react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import {Label} from "@/components/ui/label";
 
-const FormulaSelect = ({ selectedFormula, setSelectedFormula }) => {
+type FormulaSelectProps = {
+    selectedFormula: string;
+    setSelectedFormula: (value: string) => void;
+};
+
+const FormulaSelect = ({ selectedFormula, setSelectedFormula }: FormulaSelectProps) => {
     return (
         <div className='flex flex-col flex-auto space-y-1.5'>
             <Label htmlFor='formula'>Formula</Label>

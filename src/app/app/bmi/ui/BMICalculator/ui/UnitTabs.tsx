@@ -1,7 +1,12 @@
 import React from 'react';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-const UnitTabs = ({ unit, setUnit }) => {
+type UnitTabsProps = {
+    unit: string;
+    setUnit: (value: string) => void;
+};
+
+const UnitTabs = ({ unit, setUnit }: UnitTabsProps) => {
     return (
         <div className='flex flex-auto justify-end'>
             <Tabs defaultValue='metric' onValueChange={(value) => setUnit(value)}>
