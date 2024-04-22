@@ -14,10 +14,10 @@ async function Layout({ children }: { children: React.ReactNode }) {
   return (
       <>
           <div className='flex h-[60px] bg-background items-center gap-3 justify-between px-3 py-1'>
-            <div className='flex gap-2 font-extralight font-Unbounded items-center text-2xl'>
+            <div className='flex gap-2 font-extralight items-center text-2xl'>
               <Link className='flex gap-2 items-center' href={'/app'}>
                 <Logo />
-                <p className='hidden md:block xl:block 2xl:block'>GYMSPARR</p>
+                <p className='hidden md:block xl:block 2xl:block'>WingSpan</p>
               </Link>
 
               <Navbar />

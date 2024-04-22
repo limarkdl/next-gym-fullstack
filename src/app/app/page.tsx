@@ -13,7 +13,7 @@ import { BiInfoCircle, BiPlusCircle } from "react-icons/bi";
 export default function Page() {
 
 
-  return (
+  return ( 
     <div className='flex p-3 flex-col gap-4'>
       <div className='flex flex-row flex-wrap gap-3 flex-auto'>
         <WeightInfo />

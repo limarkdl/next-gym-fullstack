@@ -6,7 +6,15 @@ import LOGOSVG_LIGHT from '../../public/LOGO_LIGHT.svg';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
-export default function Logo() {
+
+interface LogoProps {
+  width?: number;
+  height?: number;
+}
+
+export default function Logo(props: LogoProps) {
+  const {width = 48, height = 48} = props;
+
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme } = useTheme();
 
@@ -15,27 +23,17 @@ export default function Logo() {
   }, []);
 
   if (!mounted) {
-    return null;
+    return <div className='h-[48px] w-[48px]' /> ;
   }
 
-  if (resolvedTheme === 'dark') {
-    return (
-      <Image src={LOGOSVG} alt='Swole Pigeon Logo' width={50} height={50} />
-    );
-  }
-
-  if (resolvedTheme === 'light') {
-    return (
-      <Image
-        src={LOGOSVG_LIGHT}
-        alt='Swole Pigeon Logo'
-        width={50}
-        height={50}
-      />
-    );
-  }
+  const logoSrc = resolvedTheme === 'dark' ? LOGOSVG : LOGOSVG_LIGHT;
 
   return (
-    <Image src={LOGOSVG_LIGHT} alt='Swole Pigeon Logo' width={50} height={50} />
+    <Image
+      src={logoSrc}
+      alt='Swole Pigeon Logo'
+      width={width}
+      height={height}
+    />
   );
 }

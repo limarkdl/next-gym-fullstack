@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Unbounded: ["Unbounded", "sans-serif"],
+        K2D: ["K2D", "Tofu"]
       },
       colors: {
         border: "hsl(var(--border))",
@@ -60,6 +61,10 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        move: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' }
+        },
         "accordion-down": {
           from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -70,6 +75,7 @@ module.exports = {
         },
       },
       animation: {
+        "move": 'move 10s linear infinite',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
