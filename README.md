@@ -1,4 +1,5 @@
 ## PET: WingSpan - Your Workout Manager 
+> THIS PROJECT IS BEING RECOVERED FROM ABANDONED CONDITION.
 
 ![Frame 13(1)](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/c0753175-2853-45d1-9ead-afa78db4d439)
 
@@ -17,7 +18,7 @@ This project is designed as a practice environment for NextJS development, utili
 
 The project's scope may be extended with additional tools and libraries as needed.
 
-## Functionality Overview (Not fully implemented yet.)
+## Functionality Overview (NOT FULLY IMPLEMENTED YET)
 
 This project is designed to support a comprehensive approach to health and fitness tracking. Here's what you can do with the app:
 
