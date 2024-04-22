@@ -1,6 +1,6 @@
 ## PET: WingSpan - Your Workout Manager 
-> THIS PROJECT IS BEING RECOVERED FROM ABANDONED CONDITION.
-
+> THIS PROJECT IS BEING RECOVERED FROM ABANDONED CONDITION. SUCCESSFULLY REDESIGNING AND DEVELOPING.
+> At this point there are no registration available. Will be available by a request once there are some really useful functionality. 
 ![Frame 13(1)](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/c0753175-2853-45d1-9ead-afa78db4d439)
 
 This project is designed as a practice environment for NextJS development, utilizing a comprehensive set of modern web development tools and libraries. Below is a detailed list of the technologies and libraries being used or planned for use:
@@ -51,14 +51,26 @@ This project is designed to support a comprehensive approach to health and fitne
 
 
 ## Appearance / Design
-> Actual appearance may and will certainly vary at this stage.
-> In the process of layout and programming, my inner demon of perfectionism and a sense of beauty constantly makeschanges that make the design not as clumsy and rough as it may look now.
-> I update sometimes README file with screenshots. But some of screenshots are just simple fast-made figma frames and they are allowed to look that bad.
-
 
 ![Group 43](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/2d4a1bcd-3bcc-4acb-9b48-9a1ab8e752d6)
+> next-gym-fullstack.vercel.app
+![Screenshot from 2024-04-23 02-24-31](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/95e88317-d7fd-4cf4-9c7a-5a14f8c85dec)
+> next-gym-fullstack.vercel.app/app
+![Screenshot from 2024-04-23 02-36-54](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/ad60c607-97bf-4469-a8fe-cc1677d28973)
+> Sign-in / Sign-up
+![Screenshot from 2024-04-23 02-38-39](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/d7f02f07-4029-4e3e-8391-93e7c205f3f1)
+> Dark Mode
+![Screenshot from 2024-04-23 02-42-30](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/4e8a6c58-fce4-4839-8f9b-1b8b2b80b52d)
+![Screenshot from 2024-04-23 02-42-47](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/554fd625-ee00-4c40-9f69-67ac7316a018)
 
+
+<details>
+   <summary>Possible layout</summary>
+   
 ![MacBook Pro 16_ - 1(2)](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/38b734b3-49e6-4468-b2de-53f8c2ff4e4c)
+   
+</details>
+
 
 
 
