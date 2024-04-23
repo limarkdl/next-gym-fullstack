@@ -27,7 +27,7 @@ export default function RootLayout({
       <html lang='en'>
       <ClerkProvider afterSignInUrl='/app' afterSignUpUrl='/app'>
 
-      <body className={k2d.className + 'overflow-x-hidden font-K2D'}>
+      <body className={k2d.className + ' font-K2D'}>
           <ThemeProvider
             attribute='class'
             defaultTheme='system'
