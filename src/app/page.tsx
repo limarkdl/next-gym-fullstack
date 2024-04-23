@@ -39,7 +39,7 @@ export default function Home() {
                         </div>
 
                         <div className='flex flex-col justify-evenly h-full'>
-                                <Section type='fade' delay='0.2s' className='md:text-5xl text-4xl w-full flex justify-center '>Ultimate workout manager</Section>
+                                <Section type='fade' delay='0.2s' className='md:text-5xl text-4xl w-full flex justify-center text-center mt-4 '>Ultimate workout manager</Section>
                                 <div className='flex flex-col md:gap-24 gap-3 md:flex-row  mx-auto text-white'>
                                     <div className='flex flex-col w-80 gap-3'>
                                         <FeatureSection delay="0.3s" icon={<GrUserManager size={24}/>} colorClass='text-blue-500' text="Manage your workouts" />
