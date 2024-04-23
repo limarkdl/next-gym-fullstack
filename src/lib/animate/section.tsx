@@ -7,10 +7,11 @@ interface SectionProps {
     className?: string;
     delay?: string;
     type?: "fade" | "slide";
+    directionForSlide?: 'toLeft' | 'toRight';
 }
 
 // @ts-ignore
-function Section({ children, className, delay, type }: SectionProps) {
+function Section({ children, className, delay, type, directionForSlide = 'toRight'}: SectionProps) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
   
@@ -35,7 +36,7 @@ function Section({ children, className, delay, type }: SectionProps) {
             <section ref={ref}>
               <span
                 style={{
-                  transform: isInView ? "none" : "translateX(-200px)",
+                  transform: isInView ? "none" : `translateX(${directionForSlide === 'toRight' ? '-' : ''}200px)`,
                   opacity: isInView ? 1 : 0,
                   transition: "all cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
                   transitionDelay: delay

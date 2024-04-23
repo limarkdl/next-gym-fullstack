@@ -39,17 +39,17 @@ export default function Home() {
                         </div>
 
                         <div className='flex flex-col justify-evenly h-full'>
-                                <h1 className='md:text-5xl text-4xl text-center'>Ultimate workout manager</h1>
+                                <Section type='fade' delay='0.2s' className='md:text-5xl text-4xl w-full flex justify-center '>Ultimate workout manager</Section>
                                 <div className='flex flex-col md:gap-24 gap-3 md:flex-row  mx-auto text-white'>
                                     <div className='flex flex-col w-80 gap-3'>
-                                        <FeatureSection delay="0.3s" icon={<GrUserManager />} colorClass='text-blue-500' text="Manage your workouts" />
-                                        <FeatureSection delay="0.5s" icon={<FaPencil/>} colorClass='text-red-500' text="Log your measurements" />
-                                        <FeatureSection delay="0.7s" icon={<FaBinoculars/>} colorClass='text-teal-500' text="Observe your progress" />
+                                        <FeatureSection delay="0.3s" icon={<GrUserManager size={24}/>} colorClass='text-blue-500' text="Manage your workouts" />
+                                        <FeatureSection delay="0.5s" icon={<FaPencil size={24}/>} colorClass='text-red-500' text="Log your measurements" />
+                                        <FeatureSection delay="0.7s" icon={<FaBinoculars size={24}/>} colorClass='text-teal-500' text="Observe your progress" />
                                     </div>
                                     <div className='flex flex-col w-80 gap-3'>
-                                        <FeatureSection delay="1s" icon={<TbMicroscope/>} colorClass='text-green-500' text="See each parameter" />
-                                        <FeatureSection delay="1.2s" icon={<RiUserSmileLine/>} colorClass='text-violet-500' text="Personalized routines" />
-                                        <FeatureSection delay="1.4s" icon={<MdOutlineFastfood/>} colorClass='text-yellow-500' text="Calorie/Water Logger" />
+                                        <FeatureSection delay="1s" icon={<TbMicroscope size={24}/>} colorClass='text-green-500' directionToSlide='toLeft' text="See each parameter" />
+                                        <FeatureSection delay="1.2s" icon={<RiUserSmileLine size={24}/>} colorClass='text-violet-500' directionToSlide='toLeft' text="Personalized routines" />
+                                        <FeatureSection delay="1.4s" icon={<MdOutlineFastfood size={24}/>} colorClass='text-yellow-500' directionToSlide='toLeft' text="Calorie/Water Logger" />
                                     </div>
                                 </div>
 
@@ -95,16 +95,18 @@ export default function Home() {
     );
 }
 
+// TODO: 'Optimize redundancy when using FeatureSection & Section '
 
 interface FeatureSectionProps {
     delay: string;
     icon: ReactNode;
     colorClass: string;
     text: string;
+    directionToSlide?: 'toRight' | 'toLeft';
 }
 
-const FeatureSection = ({ delay, icon, colorClass, text }: FeatureSectionProps) => (
-    <Section delay={delay} className='bg-black px-10 whitespace-nowrap py-5 flex flex-row gap-5 items-center rounded-xl'>
+const FeatureSection = ({ delay, icon, colorClass, text, directionToSlide }: FeatureSectionProps) => (
+    <Section delay={delay} directionForSlide={directionToSlide} className='bg-black px-10 whitespace-nowrap py-5 flex flex-row gap-5 items-center rounded-xl'>
         <div className={cn('w-6 h-6 flex justify-center items-center', colorClass)}> 
             {icon}
         </div>
