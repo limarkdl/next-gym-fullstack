@@ -93,7 +93,7 @@ export default function Home() {
                         <div className='max-w-sm'>
                             <Section delay="0.5s">
                                 Tailored specifically for individuals who value discipline
-                                over fleeting  motivation. It's designed for those who
+                                over fleeting  motivation. It&apos;s designed for those who
                                 are committed to their fitness  and health goals,
                                 providing an uncompromising platform that supports
                                 consistent effort without the need for external
@@ -126,7 +126,7 @@ export default function Home() {
                 className='w-full h-[98vh]  pt-24 bg-background flex flex-col justify-between '>
                 <div className='flex flex-col max-w-7xl w-full mx-auto px-16'>
                     <Section delay="0.5s" className='text-4xl  sm:text-4xl md:text-5xl xl:5xl 2xl:5xl '>
-                        I haven't figure out what to put here yet.
+                        I haven&apos;t figure out what to put here yet.
                     </ Section>
 
 
