@@ -10,7 +10,10 @@ import {
 } from '@/components/ui/popover';
 import Link from 'next/link';
 import { TbSettings } from 'react-icons/tb';
+import { Expletus_Sans } from 'next/font/google';
+import { cn } from '@/lib/utils';
 
+const expletus_sans = Expletus_Sans({ subsets: ['latin'] })
 
 
 interface HeaderProps {
@@ -25,8 +28,9 @@ const Header = (props: HeaderProps) => {
       <a href={onClickLink}>
       <div className='flex gap-2 font-extralight items-center  text-2xl'>
         <Logo /> 
-        WingSpan <span className='font-K2D text-sm text-muted-foreground'>{'(α)'}</span>
-      </div>
+        WingSpan 
+        <span className={cn(expletus_sans.className, 'text-xs mb-3 text-muted-foreground')}>Alpha</span>
+    </div>
       </a>
       <div className='flex gap-3'>
         <Popover>

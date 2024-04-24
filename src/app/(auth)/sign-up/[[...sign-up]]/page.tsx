@@ -5,7 +5,7 @@ import Header from "@/app/(ui)/Header/Header";
 
 export default function Page() {
   return <div className='flex flex-col h-screen w-screen'>
-      <Header withAuth={true}/>
+      <Header withAuth={false}/>
       <div className='flex flex-col h-full items-center justify-center'>
         <SignUp />
       </div>

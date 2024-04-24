@@ -20,7 +20,7 @@ interface BeltProps {
 
 
 const Belt = ({ background }: BeltProps) => (
-    <div style={{ overflow: 'hidden', width: '100%', height: '50px' }}>
+    <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
         <motion.div
             className="beltBackground"
             style={{
