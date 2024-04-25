@@ -1,8 +1,8 @@
 "use client";
 
 import Image from 'next/image';
-import LOGOSVG from '../../public/LOGO.svg';
-import LOGOSVG_LIGHT from '../../public/LOGO_LIGHT.svg';
+import LOGOSVG from '@/public/LOGO.svg';
+import LOGOSVG_LIGHT from '@/public/LOGO_LIGHT.svg';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 

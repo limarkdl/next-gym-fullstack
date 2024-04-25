@@ -1,11 +1,9 @@
-
 import CaloriesInfo from "./ui/calories-info";
 import WorkoutsInfo from "./ui/workouts-info";
 import WeightInfo from "./ui/weight-info";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import {Separator} from "@/components/ui/separator";
 import {MdWaterDrop} from "react-icons/md";
-import {TbBarbell} from "react-icons/tb";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { BiInfoCircle, BiPlusCircle } from "react-icons/bi";

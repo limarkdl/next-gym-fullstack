@@ -1,23 +1,26 @@
 "use client";
-import Header from './(ui)/Header/Header';
+import Header from './(ui)/header/header';
 import Image from 'next/image';
-import Eye_Yabloko from '../../public/Eye_Yabloko.svg'
-import Eye_Zrachok from '../../public/Eye_Zrachok.svg'
 import { TbArrowDown, TbMicroscope } from 'react-icons/tb';
 import { MdOutlineFastfood } from 'react-icons/md';
 import { GrUserManager } from 'react-icons/gr';
 import { FaPencil, FaBinoculars, FaGithub, FaFigma } from 'react-icons/fa6';
 import { RiUserSmileLine } from 'react-icons/ri';
 import Section from '@/lib/animate/section';
-import Belt from './(ui)/Header/Belt';
+import Belt from './(ui)/animated-components/belt';
 import React, { ReactNode } from 'react';
-
-import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import Logo from '@/components/Logo';
+import FeatureSection from './(ui)/animated-components/framer-components';
+import AnimatedEyes from './(ui)/animated-components/animated-eyes';
 
 
 // TODO: 'REFACTOR DECOMPOSE THIS DISASTER'
+
+
+const GitHub_link = "https://github.com/limarkdl/next-gym-fullstack";
+const Figma_link = "https://www.figma.com/file/cWwoYxSZKos9gGX4UJ24kQ/WingSpan?type=design&node-id=0%3A1&mode=design&t=6w5VKqRKy7pZ4slU-1"
+
 
 
 export default function Home() {
@@ -33,31 +36,9 @@ export default function Home() {
                         <Header withAuth={false} />
                     </Section>
                     <section className='flex flex-col gap-1 h-full p-3'>
-                        <div className='absolute z-[-1] md:top-1/4 top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 '>
 
-                            <Image
-                                src={Eye_Yabloko}
-                                alt={"Predator's Eyes"}
-                                width={312}
-                                height={312}
-                            />
+                        <AnimatedEyes />
 
-                        </div>
-
-                        <div className='absolute z-[-1] md:top-1/4 top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 '>
-                            <motion.div
-                                className="beltBackground"
-                                {...eyeAnimation}>
-                                <Image
-                                    src={Eye_Zrachok}
-                                    alt={"Predator's Eyes"}
-                                    width={312}
-                                    height={312}
-                                />
-                            </motion.div>
-
-
-                        </div>
 
                         <div className='flex flex-col justify-evenly h-full'>
                             <Section type='fade' delay='0.2s' className='md:text-5xl text-4xl w-full flex justify-center text-center mt-4 '>Ultimate workout manager.</Section>
@@ -102,6 +83,7 @@ export default function Home() {
                         </div>
                         <div className='flex items-center justify-center sm:justify-end w-full'>
                             <Section type='fade' delay='1.0s' >
+
                                 <Image
                                     src="/AtoB.png"
                                     alt='A to B '
@@ -109,6 +91,7 @@ export default function Home() {
                                     height={100}
 
                                 />
+
                             </Section>
 
 
@@ -138,8 +121,8 @@ export default function Home() {
             </div>
             <div className='w-full pb-10 pt-24 bg-background flex bg-black flex-col justify-between '>
                 <div className='flex flex-col max-w-7xl text-white w-full mx-auto px-16'>
-                <Section delay="0.2s" className='text-4xl  sm:text-4xl md:text-5xl xl:5xl 2xl:5xl '>
-                Assets Crafted with Love and Patience.
+                    <Section delay="0.2s" className='text-4xl  sm:text-4xl md:text-5xl xl:5xl 2xl:5xl '>
+                        Assets Crafted with Love and Patience.
                     </ Section>
                     <p className=' mb-2 mt-10'>{"/logo.svg"}</p>
                     <div className='bg-background p-5 flex justify-center items-center rounded-2xl'>
@@ -155,10 +138,10 @@ export default function Home() {
 
                     <p className=' mb-2 mt-5'>{"/humans_together.svg"}</p>
                     <div className='bg-white p-5 flex justify-center items-center rounded-2xl'>
-                        <Image 
+                        <Image
                             width={300}
-                            height={500} 
-                            alt='Humans' 
+                            height={500}
+                            alt='Humans'
                             src='/HumansAsset.png'
                         />
                     </div>
@@ -169,70 +152,28 @@ export default function Home() {
                 pattern-size-8 pattern-opacity-100"></div>
             <div className='bg-white h-24 flex justify-center items-center text-2xl font-black gap-5'>
                 <motion.a
-                 className='flex flex-row gap-2 items-center px-4 py-2 bg-gray-700 hover:bg-gradient-to-br hover:via-violet-800 hover:from-slate-800 hover:to-slate-800 rounded-xl text-white'
-                 whileHover={{scale: 1.2}}
-                 href='https://github.com/limarkdl/next-gym-fullstack'
-                 target='_blank'
-                 >
+                    className='flex flex-row gap-2 items-center px-4 py-2 bg-gray-700 hover:bg-gradient-to-br hover:via-violet-800 hover:from-slate-800 hover:to-slate-800 rounded-xl text-white'
+                    whileHover={{ scale: 1.2 }}
+                    href={GitHub_link}
+                    target='_blank'
+                >
                     <FaGithub />
                     GitHub
-                    </motion.a>
-                <motion.a 
-                className='flex flex-row gap-2 items-center px-4 py-2 bg-gray-700 hover:bg-gradient-to-br hover:via-violet-400 hover:from-orange-600 hover:to-blue-500 rounded-xl text-white'
-                whileHover={{scale: 1.2}}
-                href='https://www.figma.com/file/cWwoYxSZKos9gGX4UJ24kQ/WingSpan?type=design&node-id=0%3A1&mode=design&t=6w5VKqRKy7pZ4slU-1'
-                target='_blank'
+                </motion.a>
+                <motion.a
+                    className='flex flex-row gap-2 items-center px-4 py-2 bg-gray-700 hover:bg-gradient-to-br hover:via-violet-400 hover:from-orange-600 hover:to-blue-500 rounded-xl text-white'
+                    whileHover={{ scale: 1.2 }}
+                    href={Figma_link}
+                    target='_blank'
                 >
                     <FaFigma />
                     Figma
-                    </motion.a>
+                </motion.a>
 
             </div>
-<div className="h-12 w-full pattern-rectangles pattern-black pattern-bg-white 
+            <div className="h-12 w-full pattern-rectangles pattern-black pattern-bg-white 
                 pattern-size-8 pattern-opacity-100"></div>
 
         </div>
     );
 }
-
-// TODO: 'Optimize redundancy when using FeatureSection & Section '
-
-const eyeAnimation = {
-    animate: {
-        x:
-            ['0px', '-3px', '3px', '0px', '0px', '0px',
-                '0px', '0px', '0px', '3px', '0px', '0px',
-                '-3px', '0px'],
-
-
-
-    },
-    transition: {
-        x: {
-            delay: 2,
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 12,
-
-        }
-    }
-};
-
-interface FeatureSectionProps {
-    delay: string;
-    icon: ReactNode;
-    colorClass: string;
-    text: string;
-    directionToSlide?: 'toRight' | 'toLeft';
-}
-
-const FeatureSection = ({ delay, icon, colorClass, text, directionToSlide }: FeatureSectionProps) => (
-    <motion.div whileHover={{ scale: 1.1 }}>
-        <Section delay={delay} directionForSlide={directionToSlide} className='bg-secondary px-10 whitespace-nowrap py-5 flex flex-row gap-5 items-center rounded-xl'>
-            <div className={cn('w-6 h-6 flex justify-center items-center', colorClass)}>
-                {icon}
-            </div>
-            {text}
-        </Section>
-    </motion.div>
-);
