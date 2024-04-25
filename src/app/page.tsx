@@ -1,5 +1,5 @@
 "use client";
-import Header from './(ui)/header/header';
+import Header from '@/app/(ui)/header/header';
 import Image from 'next/image';
 import { TbArrowDown, TbMicroscope } from 'react-icons/tb';
 import { MdOutlineFastfood } from 'react-icons/md';

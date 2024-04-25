@@ -1,7 +1,7 @@
 import Logo from '@/components/Logo';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
 import { SignIn } from '@clerk/nextjs';
-import Header from '@/app/(ui)/Header/Header';
+import Header from '@/app/(ui)/header/header';
 
 export default function Page() {
   return (
