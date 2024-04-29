@@ -22,7 +22,7 @@ const tools: { title: string; href: string; description: string }[] = [
   },
   {
     title: 'Water Logger',
-    href: '/app/water-logger',
+    href: '/app/water',
     description: 'Logs your water intake.',
   },
   {
