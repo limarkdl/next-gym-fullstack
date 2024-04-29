@@ -58,14 +58,14 @@ This project is designed to support a comprehensive approach to health and fitne
 
 ![Group 43](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/2d4a1bcd-3bcc-4acb-9b48-9a1ab8e752d6)
 > next-gym-fullstack.vercel.app
-![Screenshot 2024-04-24 at 08-04-12 WingSpan](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/ac0f5810-0534-4e94-b56b-2a38f097075f)
+![Screenshot 2024-04-29 at 05-15-16 WingSpan](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/3e2f8192-f150-43fe-8360-f3fbd4451889)
 
 > next-gym-fullstack.vercel.app/app
 ![Screenshot from 2024-04-23 02-36-54](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/ad60c607-97bf-4469-a8fe-cc1677d28973)
 > Sign-in / Sign-up
 ![Screenshot from 2024-04-23 02-38-39](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/d7f02f07-4029-4e3e-8391-93e7c205f3f1)
 > Dark Mode
-![Screenshot 2024-04-24 at 08-05-44 WingSpan](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/f8ddcf6d-707a-4934-bb2f-a011debb10b7)
+![Screenshot 2024-04-29 at 05-18-52 WingSpan](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/88625850-0e45-432c-8727-777b6b6c472e)
 ![Screenshot from 2024-04-23 02-42-47](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/554fd625-ee00-4c40-9f69-67ac7316a018)
 
 
