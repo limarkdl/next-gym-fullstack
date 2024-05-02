@@ -47,14 +47,15 @@ This project is designed as a practice environment for NextJS development, utili
 
 ![Group 43](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/2d4a1bcd-3bcc-4acb-9b48-9a1ab8e752d6)
 > next-gym-fullstack.vercel.app
-![Screenshot 2024-04-29 at 05-15-16 WingSpan](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/3e2f8192-f150-43fe-8360-f3fbd4451889)
+![image](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/24ceaa67-ca77-4e90-8463-a8d93e7ab770)
 
 > next-gym-fullstack.vercel.app/app
 ![Screenshot from 2024-04-23 02-36-54](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/ad60c607-97bf-4469-a8fe-cc1677d28973)
 > Sign-in / Sign-up
 ![Screenshot from 2024-04-23 02-38-39](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/d7f02f07-4029-4e3e-8391-93e7c205f3f1)
 > Dark Mode
-![Screenshot 2024-04-29 at 05-18-52 WingSpan](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/88625850-0e45-432c-8727-777b6b6c472e)
+![image](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/02c2106f-dcf8-4c0c-a034-451a66248e66)
+
 ![Screenshot from 2024-04-23 02-42-47](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/554fd625-ee00-4c40-9f69-67ac7316a018)
 
 
