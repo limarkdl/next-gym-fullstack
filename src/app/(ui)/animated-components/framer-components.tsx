@@ -13,7 +13,8 @@ interface FeatureSectionProps {
 
 const FeatureSection = ({ delay, icon, colorClass, text, directionToSlide }: FeatureSectionProps) => (
     <motion.div whileHover={{ scale: 1.1 }}>
-        <Section delay={delay} directionForSlide={directionToSlide} className='bg-secondary px-10 whitespace-nowrap py-5 flex flex-row gap-5 items-center rounded-xl'>
+        <Section delay={delay} directionForSlide={directionToSlide} className='bg-secondary
+        px-7 sm:px-10 whitespace-nowrap py-3 sm:py-5 flex flex-row gap-5 items-center rounded-xl'>
             <div className={cn('w-6 h-6 flex justify-center items-center', colorClass)}>
                 {icon}
             </div>

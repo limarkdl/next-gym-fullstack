@@ -1,57 +1,46 @@
 ## PET: WingSpan - Your Workout Manager 
-> At this point there is no registration available. Will be available by a request once there are some really useful functionality. 
+
 ![Frame 13(1)](https://github.com/limarkdl/next-gym-fullstack/assets/116545670/c0753175-2853-45d1-9ead-afa78db4d439)
 
 
 
-## DEPLOYED: [Click me](https://next-gym-fullstack.vercel.app/)
+## DEPLOYED: [next-gym-fullstack.vercel.app](https://next-gym-fullstack.vercel.app/)
 
 
 This project is designed as a practice environment for NextJS development, utilizing a comprehensive set of modern web development tools and libraries. Below is a detailed list of the technologies and libraries being used or planned for use:
 
-- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript, enhancing code quality and understandability. [Learn more](https://www.typescriptlang.org/)
-- **NextJS**: A React framework that enables functionality such as server-side rendering and generating static websites. [Learn more](https://nextjs.org/)
-- **React**: A JavaScript library for building user interfaces, maintained by Facebook. [Learn more](https://reactjs.org/)
-- **TailWindCSS**: A utility-first CSS framework for rapid UI development. [Learn more](https://tailwindcss.com/)
-- **ShadCN**: A UI library (Note: Placeholder link as ShadCN could not be verified as a well-known library).
-- **Prisma**: An open-source ORM for Node.js and TypeScript, making database management easier and more robust. [Learn more](https://www.prisma.io/)
-- **Jest**: A delightful JavaScript Testing Framework with a focus on simplicity, used for unit and component testing. [Learn more](https://jestjs.io/)
-- **Cypress**: An end-to-end testing framework designed to simplify the testing process by running tests in a browser as they would be seen by a user. [Learn more](https://www.cypress.io/)
-- **Clerk**: A complete solution for authentication and user management. [Learn more](https://clerk.com/)
-- **PostgreSQL**: A powerful, open source object-relational database system with a strong reputation for reliability, feature robustness, and performance. [Learn more](https://www.postgresql.org/)
+- **TypeScript**
+- **NextJS**
+- **React**
+- **TailWindCSS**
+- **ShadCN**
+- **Prisma**
+- **Jest**
+- **Cypress**
+- **Clerk**
+- **PostgreSQL**
 
-The project's scope may be extended with additional tools and libraries as needed.
 
 ## Functionality Overview (NOT FULLY IMPLEMENTED YET)
 
-This project is designed to support a comprehensive approach to health and fitness tracking. Here's what you can do with the app:
 
-1. **Track Your Weight**:
-   - Optionally include percentage of fat and muscle for a more detailed health profile. Smart body scales are required.
+1. **Track Your Weight**: Optionally include percentage of fat and muscle for a more detailed health profile. Smart body scales are required.
 
-2. **Track Body Parameters**:
-   - Measure and record dimensions from heel to ear to monitor physical changes and improvements.
+2. **Track Body Parameters**: Measure and record dimensions from heel to ear to monitor physical changes and improvements.
 
-3. **Training Diary**:
-   - Keep a detailed diary of each training session, noting exercises, sets, reps, and intensity.
+3. **Training Diary**: Keep a detailed diary of each training session, noting exercises, sets, reps, and intensity.
 
-4. **Visualize Progress**:
-   - Use the data entered to generate visual progress reports that help you stay motivated and informed.
+4. **Visualize Progress**: Use the data entered to generate visual progress reports that help you stay motivated and informed.
 
-5. **Tips and Exercises**:
-   - Receive customized tips and a list of exercises aimed at improving specific parts of the body.
+5. **Tips and Exercises**: Receive customized tips and a list of exercises aimed at improving specific parts of the body.
 
-6. **Program Support**:
-   - The app supports various training programs, including full body workouts and split routines.
+6. **Program Support**: The app supports various training programs, including full body workouts and split routines.
 
-7. **Periodization in Logs**:
-   - Track and account for periodization in your training logs to optimize gains and recovery.
+7. **Periodization in Logs**: Track and account for periodization in your training logs to optimize gains and recovery.
 
-8. **Create Personal Routines**:
-   - Design and save personal workout routines that fit your goals and preferences.
+8. **Create Personal Routines**: Design and save personal workout routines that fit your goals and preferences.
 
-9. **Water and Calorie Consumption Logger**:
-   - Maintain a daily log of water intake and calories consumed to better understand your dietary habits.
+9. **Water and Calorie Consumption Logger**: Maintain a daily log of water intake and calories consumed to better understand your dietary habits.
 
 
 ## Appearance / Design

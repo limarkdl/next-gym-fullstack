@@ -24,7 +24,7 @@ interface HeaderProps {
 const Header = (props: HeaderProps) => {
   const {withAuth = true, onClickLink = "/"} = props;
   return (
-    <div className='flex h-[60px] bg-background items-center gap-3 justify-between px-3 py-1'>
+    <div className='absolute w-full flex h-[60px] items-center gap-3 justify-between px-3 py-1'>
       <a href={onClickLink}>
       <div className='flex gap-2 font-extralight items-center  text-2xl'>
         <Logo /> 
